@@ -12,11 +12,25 @@ summaryLength = 10 # see https://gohugo.io/content-management/excerpts/
 # disable language
 disableLanguages = [
 ] # example: ["fr"] for disable french language. see https://gohugo.io/content-management/multilingual/
-hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
+hasCJKLanguage = false # If hasCJKLanguage true, auto-detect Chinese/Japanese/Korean Languages in the content. see: https://gohugo.io/getting-started/configuration/#hascjklanguage
 # default language
-defaultContentLanguage = 'es'
-# defaultContentLanguageInSubdir need to be true if you want to use the language code as a subdirectory and language specific 404 page
+defaultContentLanguage = "es"
+# defaultContentLanguageInSubdir need to be true if you want to use the language code as a subdirectory and language-specific 404 page
 defaultContentLanguageInSubdir = false
+
+######################## Multilingual Configuration ####################
+[languages]
+[languages.es]
+title = "ANEXUS Analytics"
+weight = 1 # Determines the default language. Lower weight means higher priority.
+languageName = "Español"
+contentDir = "content/es" # Ensure you have this folder for Spanish content
+
+[languages.en]
+title = "ANEXUS Analytics"
+weight = 2
+languageName = "English"
+contentDir = "content/en" # Ensure this folder exists for English content
 
 ########################### Services #############################
 [services]
@@ -29,7 +43,6 @@ shortname = 'themefisher-template' # we use disqus to show comments in blog post
 ########################## Permalinks ############################
 [permalinks.page]
 "pages" = "/:slugorfilename/"
-
 
 ########################## Pagination ############################
 [pagination]
