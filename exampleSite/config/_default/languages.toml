@@ -7,7 +7,7 @@ weight = 2
 
 
 ################ Spanish language ##################
-[en]
+[es]
 languageName = "Español"
 languageCode = "es"
 contentDir = "content/spanish"
