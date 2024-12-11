@@ -7,7 +7,7 @@ url = "/es/"     # The base URL for Spanish pages
 weight = 1
 
 [[main]]
-name = "Acerca de"  # Spanish for "About"
+name = "Sobre nosotros"  # Spanish for "About"
 url = "/es/about"   # URL for the "About" page in Spanish
 weight = 2
 
